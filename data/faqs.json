@@ -1,0 +1,192 @@
+[
+  {
+    "id": 1,
+    "question": "How do I create a new ticket in PulseDesk?",
+    "answer": "You can create a new ticket by clicking the '+ New Ticket' button at the top-left of the agent dashboard. You can also receive tickets automatically when customers email your support address (e.g., support@yourdomain.com) or submit a message through the website live chat widget."
+  },
+  {
+    "id": 2,
+    "question": "What are ticket statuses and how do I change them?",
+    "answer": "PulseDesk uses five main ticket statuses: 'Open' (needs action), 'Pending' (waiting on customer response), 'On Hold' (waiting on internal review/third-party), 'Resolved' (issue fixed), and 'Closed' (archived, no further replies allowed). You can change the status via the drop-down menu inside the ticket view or by using bulk actions from the ticket list page."
+  },
+  {
+    "id": 3,
+    "question": "How can I assign a ticket to another agent or department?",
+    "answer": "Inside the ticket view, look for the 'Assignee' panel on the right sidebar. Click it to choose a specific agent, or select a department (such as Billing, Tier 2 Support, or Sales) to assign it to that team's queue. Agents within that department will receive a notification."
+  },
+  {
+    "id": 4,
+    "question": "How do I merge duplicate tickets?",
+    "answer": "To merge tickets, go to the ticket list view, select the checkboxes next to the duplicate tickets, and click the 'Merge' button in the bulk action menu. You will be prompted to select the primary ticket. All replies, internal notes, and attachments will be consolidated into the primary ticket, and the duplicate ticket will be marked as closed."
+  },
+  {
+    "id": 5,
+    "question": "How can I set up automated ticket routing rules?",
+    "answer": "Navigate to Settings > Workflows > Routing Rules. You can create triggers based on criteria like subject keywords, sender domain, custom fields, or source channel (e.g., email vs chat). For example, you can set a rule that automatically assigns any ticket containing the word 'billing' to the Billing team."
+  },
+  {
+    "id": 6,
+    "question": "How do Service Level Agreements (SLAs) work in PulseDesk?",
+    "answer": "You can define SLAs by going to Settings > Workflows > SLA Policies. Set response time targets (e.g., first reply within 2 hours) and resolution time targets based on ticket priority (Low, Medium, High, Urgent). PulseDesk will track elapsed time and trigger warnings or escalations if targets are close to being breached."
+  },
+  {
+    "id": 7,
+    "question": "What are tags and how should I use them?",
+    "answer": "Tags are short keywords you can add to tickets (e.g., 'bug', 'feature-request', 'vip') to help categorize, search, and run reports. You can add them manually in the ticket panel or automate tag creation using routing rules and macros."
+  },
+  {
+    "id": 8,
+    "question": "How can I view a ticket's activity history?",
+    "answer": "At the bottom of the conversation window in any ticket, click on the 'Activity Log' tab. This shows a chronological list of all actions taken on the ticket, including status changes, assignments, emails sent, internal notes added, and automation rules triggered."
+  },
+  {
+    "id": 9,
+    "question": "How do I add internal notes to a ticket that clients cannot see?",
+    "answer": "In the ticket reply box, click the 'Internal Note' tab (usually highlighted in yellow/orange) instead of 'Public Reply'. Anything typed in the Internal Note area is visible only to logged-in PulseDesk agents and will not be sent to the customer."
+  },
+  {
+    "id": 10,
+    "question": "Can I restore a deleted ticket?",
+    "answer": "Yes, deleted tickets are placed in a 'Trash' folder for 30 days before they are permanently deleted. Go to Tickets > Views > Trash, select the ticket you wish to recover, and click 'Restore'. Admin permissions are required to permanently purge tickets from the Trash folder."
+  },
+  {
+    "id": 11,
+    "question": "What pricing plans does PulseDesk offer?",
+    "answer": "PulseDesk offers three plans: Starter ($15/mo), Growth ($49/mo), and Enterprise (custom pricing)."
+  },
+  {
+    "id": 12,
+    "question": "How do I upgrade or downgrade my subscription?",
+    "answer": "Only account Owners or Billing Admins can manage the subscription. Go to Settings > Billing > Subscription Plan. From there, select the plan you want to switch to. Upgrades take effect immediately (pro-rated charge), while downgrades take effect at the end of the current billing cycle."
+  },
+  {
+    "id": 13,
+    "question": "How do I add or remove agent licenses?",
+    "answer": "Go to Settings > Billing > Seats. To add agent seats, click 'Add Seats', enter the quantity, and confirm the pro-rated charge. To remove seats, you must first deactivate the agents in Settings > Team Members to free up the seats, and then reduce the number of purchased seats under the Billing section."
+  },
+  {
+    "id": 14,
+    "question": "Where can I find and download my billing invoices?",
+    "answer": "Invoices are available in Settings > Billing > Invoices. You can view, download, or email PDF versions of all past payments. You can also add a secondary email address to receive billing statements automatically."
+  },
+  {
+    "id": 15,
+    "question": "What payment methods does PulseDesk accept?",
+    "answer": "We accept all major credit cards (Visa, Mastercard, American Express, Discover) and PayPal. For annual Enterprise plans, we can also accommodate bank transfers and purchase orders. Contact billing@pulsedesk.com to set up bank payments."
+  },
+  {
+    "id": 16,
+    "question": "How do I cancel my PulseDesk subscription?",
+    "answer": "Go to Settings > Billing > Subscription Plan and click 'Cancel Subscription' at the bottom of the page. Your account will remain active until the end of your prepaid billing period, at which point it will automatically convert to a deactivated read-only state."
+  },
+  {
+    "id": 17,
+    "question": "How do I integrate PulseDesk with Slack?",
+    "answer": "Go to Settings > Integrations > Slack. Click 'Connect to Slack' and authorize the integration. You can configure which PulseDesk events trigger Slack notifications (e.g., ticket created, ticket breached SLA) and route them to specific Slack channels."
+  },
+  {
+    "id": 18,
+    "question": "How can I connect my support email to PulseDesk?",
+    "answer": "Navigate to Settings > Channels > Email. Click 'Add Support Address'. You can configure forwarding from your existing email provider (like Gmail or Outlook) to your unique PulseDesk forwarding address, or set up custom SMTP/IMAP settings to allow PulseDesk to send and receive directly."
+  },
+  {
+    "id": 19,
+    "question": "Where do I find my API key?",
+    "answer": "Go to your Profile Settings by clicking your avatar in the bottom-left corner. Under the 'API Credentials' tab, click 'Generate API Token'. Copy the token immediately and store it securely; it will not be displayed again for security reasons."
+  },
+  {
+    "id": 20,
+    "question": "How do I configure webhooks in PulseDesk?",
+    "answer": "Go to Settings > Developers > Webhooks. Click 'Create Webhook', enter the target URL, and select the events that should trigger the webhook (e.g., ticket.created, ticket.updated, message.sent). You can also configure standard HMAC headers for payload verification."
+  },
+  {
+    "id": 21,
+    "question": "Does PulseDesk integrate with Salesforce or other CRMs?",
+    "answer": "Yes. PulseDesk has pre-built integrations for Salesforce, HubSpot, and Zoho CRM. Navigate to Settings > Integrations, click on the desired CRM, and click 'Install'. This integration syncs customer details, contact info, and open tickets directly to and from your CRM."
+  },
+  {
+    "id": 22,
+    "question": "How do I set up the live chat widget on my website?",
+    "answer": "Go to Settings > Channels > Chat Widget. Customize the appearance, greetings, and behavior of your widget. Once configured, copy the provided Javascript snippet code and paste it right before the closing </body> tag of your website's HTML pages."
+  },
+  {
+    "id": 23,
+    "question": "How do I publish a new article to our public Knowledge Base?",
+    "answer": "Go to Knowledge Base > Articles and click '+ New Article'. Write your content using the rich text editor, assign it to a category/section, add tags, and set its status to 'Published'. You can also save it as a draft or schedule it to publish at a future date."
+  },
+  {
+    "id": 24,
+    "question": "How can I customize the branding of our Help Center?",
+    "answer": "Go to Settings > Channels > Help Center. You can upload your company logo, choose custom primary and background colors, configure a custom subdomain (e.g., support.yourdomain.com), and edit the header/footer HTML to match your website branding."
+  },
+  {
+    "id": 25,
+    "question": "How do I enable and configure the PulseDesk AI Chatbot?",
+    "answer": "Navigate to Settings > AI Chatbot > Configuration and toggle the switch to 'Enabled'. You can customize the bot's display name, upload a custom avatar, choose its tone of voice, and point it to the Knowledge Base categories it should use to answer user queries."
+  },
+  {
+    "id": 26,
+    "question": "Can I restrict certain knowledge base articles to logged-in users?",
+    "answer": "Yes. When editing an article, look for the 'Visibility' setting in the right-hand panel. You can change it from 'Public' to 'Internal Only' (visible only to agents) or 'Restricted to Users' (requires customers to log into their customer portal account to view)."
+  },
+  {
+    "id": 27,
+    "question": "How does the AI chatbot handle complex questions it cannot answer?",
+    "answer": "If the AI chatbot cannot find a high-confidence answer in your Knowledge Base, it will politely explain that it cannot answer the question and offer to create a support ticket or hand off the conversation to a live agent, depending on your chat availability settings."
+  },
+  {
+    "id": 28,
+    "question": "How do I create custom fields for tickets?",
+    "answer": "Go to Settings > Customization > Ticket Fields. Click 'Add Custom Field', select the field type (Text, Dropdown, Checkbox, Date, Number), and specify whether it is mandatory for agents, customers, or both when submitting/updating a ticket."
+  },
+  {
+    "id": 29,
+    "question": "How do I customize email templates sent to customers?",
+    "answer": "Go to Settings > Channels > Email > Templates. You can edit the layouts for ticket creation confirmation, agent replies, satisfaction surveys, and reset passwords using HTML and dynamic placeholders like {{ticket.id}}, {{ticket.subject}}, and {{customer.first_name}}."
+  },
+  {
+    "id": 30,
+    "question": "Can I set up business hours for my support team?",
+    "answer": "Yes, on Professional and Enterprise plans, go to Settings > Team > Business Hours. You can configure active hours (e.g., Mon-Fri 9:00 AM to 5:00 PM EST) and holidays. SLA timers can be configured to pause during non-business hours."
+  },
+  {
+    "id": 31,
+    "question": "How do I change the language or timezone of my workspace?",
+    "answer": "Go to Settings > Workspace > General. Under 'Localization Settings', select your preferred timezone, date format, and primary language. This will set default formats across all ticket timestamps and agent portals."
+  },
+  {
+    "id": 32,
+    "question": "Does PulseDesk support dark mode?",
+    "answer": "Yes. Each agent can toggle dark mode individually by clicking their profile picture in the bottom-left corner and clicking the toggle switch next to 'Dark Mode'. The dashboard appearance settings also support matching your system preferences."
+  },
+  {
+    "id": 33,
+    "question": "How do I reset my password?",
+    "answer": "Go to Settings > Account > Security and click 'Reset Password'. You'll receive a reset link via email."
+  },
+  {
+    "id": 34,
+    "question": "How do I configure Single Sign-On (SSO)?",
+    "answer": "SSO configuration is available on Enterprise plans. Go to Settings > Security > Single Sign-On (SSO). Toggle SSO to 'On', select your provider type (SAML 2.0 or OIDC), and provide your Identity Provider metadata URL, client ID, and login endpoint URL."
+  },
+  {
+    "id": 35,
+    "question": "How do I enable Two-Factor Authentication (2FA) for my team?",
+    "answer": "To enforce 2FA workspace-wide, go to Settings > Security > Authentication. Toggle the 'Require 2FA' option. Agents will be prompted to set up 2FA using an authenticator app (such as Google Authenticator, Authy, or Duo) on their next login."
+  },
+  {
+    "id": 36,
+    "question": "What security standards and compliance does PulseDesk meet?",
+    "answer": "PulseDesk is SOC 2 Type II certified and complies with GDPR and HIPAA regulations. All communications are encrypted in transit using TLS 1.3, and database fields are encrypted at rest using AES-256."
+  },
+  {
+    "id": 37,
+    "question": "How is my data encrypted and backed up?",
+    "answer": "All customer data is stored in AWS isolated database instances. Automated database snapshots are taken every hour and retained for 35 days. Backups are encrypted at rest using KMS-managed keys and stored across multiple availability zones."
+  },
+  {
+    "id": 38,
+    "question": "What should I do if the PulseDesk dashboard is loading slowly?",
+    "answer": "First, clear your browser cache and cookies or try using an incognito window. Check our real-time status page at status.pulsedesk.com to verify there are no active service outages. If issues persist, test on a different network connection or contact support@pulsedesk.com."
+  }
+]
