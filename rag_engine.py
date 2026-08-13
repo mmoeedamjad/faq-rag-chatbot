@@ -19,8 +19,8 @@ faq_questions = [faq['question'] for faq in faqs]
 faq_embeddings = model.encode(faq_questions)  # recompute fresh; 38 items is instant
 
 client = OpenAI(
-    api_key=os.getenv("NVIDIA_API_KEY"),
-    base_url="https://integrate.api.nvidia.com/v1"
+    api_key=os.getenv("LLM_API_KEY"),
+    base_url=os.getenv("LLM_API_BASE", "https://api.groq.com/openai/v1")
 )
 
 
@@ -67,7 +67,7 @@ def build_prompt(user_query, retrieved_faqs):
 def generate_answer(user_query, retrieved_faqs):
     system_prompt, user_prompt = build_prompt(user_query, retrieved_faqs)
     response = client.chat.completions.create(
-        model="meta/llama-3.3-70b-instruct",
+        model=os.getenv("LLM_MODEL_NAME", "llama-3.1-8b-instant"),
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}

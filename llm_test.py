@@ -5,14 +5,14 @@ from openai import OpenAI
 
 load_dotenv()
 
-api_key = os.getenv("NVIDIA_API_KEY")
-if not api_key or api_key == "nvapi-your-key-here":
-    print("ERROR: Please set your actual NVIDIA_API_KEY in the .env file.")
+api_key = os.getenv("LLM_API_KEY")
+if not api_key:
+    print("ERROR: Please set your actual LLM_API_KEY in the .env file.")
     sys.exit(1)
 
 client = OpenAI(
     api_key=api_key,
-    base_url="https://integrate.api.nvidia.com/v1"
+    base_url=os.getenv("LLM_API_BASE", "https://api.groq.com/openai/v1")
 )
 
 
@@ -38,7 +38,7 @@ def generate_answer(user_query, retrieved_faqs):
     system_prompt, user_prompt = build_prompt(user_query, retrieved_faqs)
 
     response = client.chat.completions.create(
-        model="meta/llama-3.3-70b-instruct",
+        model=os.getenv("LLM_MODEL_NAME", "llama-3.1-8b-instant"),
         messages=[
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": user_prompt}

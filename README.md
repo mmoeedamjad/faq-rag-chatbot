@@ -42,11 +42,11 @@ Flask app (single process)
         ├── 2. Cosine similarity        against pre-embedded FAQ matrix (NumPy)
         ├── 3. Threshold gate           best_score < 0.35 → refuse, skip LLM
         ├── 4. Build grounded prompt    inject top-3 retrieved FAQs as context
-        └── 5. Generate answer          NVIDIA NIM API (Llama 3.3 70B Instruct)
+        └── 5. Generate answer          Groq API (llama-3.1-8b-instant)
 ```
 
 **Tech stack:** Flask, Sentence-Transformers (`all-MiniLM-L6-v2`), NumPy,
-NVIDIA NIM (Llama 3.3 70B Instruct, OpenAI-compatible API), vanilla HTML/CSS/JS.
+Groq API (llama-3.1-8b-instant, OpenAI-compatible API), vanilla HTML/CSS/JS.
 
 ---
 
